@@ -1,0 +1,55 @@
+body{
+    margin:0;
+}
+
+.top-pane{
+    display:flex;
+    background-color: hsla(153, 60%, 82%, 0.57);
+}
+
+.pane{
+    display:flex;
+    height:50vh;
+}
+
+.editor-container {
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction:column;
+    padding:.5rem;
+    background-color: hsla(153, 44%, 18%, 0.57)
+}
+
+.editor-container.collapsed {
+    flex-grow: 0;
+}
+.editor-container.collapsed .CodeMirror-scroll{
+    position:absolute;
+    overflow:hidden !important;
+}
+.expand-compress-btn{
+    margin-left:.5rem;
+    background: none;
+    border:none;
+    color:white;
+    cursor:pointer
+}
+.editor-title{
+    display:flex;
+    justify-content: space-between;
+    background-color: hsla(153, 60%, 82%, 0.57);
+    color:white;
+    padding:.5rem .5rem .5rem .5rem;
+    border-top-right-radius:.5rem;
+    border-top-left-radius:.5rem;
+}
+/* 
+.CodeMirror{
+    height:100% !important;
+} */
+.code-mirror-wrapper{
+    border-bottom-right-radius:.5rem;
+    border-bottom-left-radius:.5rem;
+    flex-grow:1;
+    overflow:hidden;
+}
